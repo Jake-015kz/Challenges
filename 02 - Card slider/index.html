@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <bds />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Card slider</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-card">
+        <div class="product-image">
+          <div class="thumbnails">
+            <img
+              src="#"
+              srcset="./assets/img/1.webp"
+              alt=""
+              class="thumbnail active"
+            />
+            <img
+              src="#"
+              srcset="./assets/img/2.webp"
+              alt=""
+              class="thumbnail"
+            />
+            <img
+              src="#"
+              srcset="./assets/img/3.webp"
+              alt=""
+              class="thumbnail"
+            />
+            <img
+              src="#"
+              srcset="./assets/img/4.webp"
+              alt=""
+              class="thumbnail"
+            />
+            <img
+              src="#"
+              srcset="./assets/img/5.webp"
+              alt=""
+              class="thumbnail"
+            />
+          </div>
+          <div class="main-image">
+            <picture>
+              <source
+                id="main-image-webp"
+                srcset="./assets/img/1.webp"
+                type="image/webp"
+              />
+              <img src="./assets/img/1.jpg" alt="Product" id="main-image" />
+            </picture>
+          </div>
+        </div>
+        <div class="product-details">
+          <h2 class="brand">Sony</h2>
+          <h1 class="title">Игровая консоль PlayStation 5 Slim 1ТБ</h1>
+          <p class="description">
+            PlayStation 5 Slim 1ТБ - это новая игровая консоль от Sony с
+            ультраглавой скоростью обработки информации и мощными графиками.
+          </p>
+          <div class="price">
+            <span class="current-price">$99.00</span>
+            <span class="discount">-25%</span>
+          </div>
+          <span class="original-price">$132.00</span>
+          <div class="size-selector">
+            <p>Choose Size</p>
+            <div class="sizes">
+              <span class="size">S</span>
+              <span class="size active">M</span>
+              <span class="size">L</span>
+              <span class="size">XL</span>
+              <span class="size">XXL</span>
+            </div>
+          </div>
+          <button class="add-to-bag">Add to Bag</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modal-image" srcset="" src="" alt="Modal Image" />
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
